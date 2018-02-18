@@ -13,8 +13,7 @@ data$datetime <- strptime(paste(data$Date, data$Time), "%Y-%m-%d %H:%M:%S")
 
 # Create plot 1
 attach(data)
-hist(Global_active_power, main = "Global Active Power", 
-     xlab = "Global Active Power (kilowatts)", col = "Red")
+hist(Global_active_power, main = "Global Active Power", xlab = "Global Active Power (kilowatts)", col = "Red")
 
 # Save
 dev.copy(png, file = "plot1.png", height = 480, width = 480)
